@@ -2,7 +2,7 @@
 ## Setup summary
 - The project is set-up using [Next.js](https://nextjs.org/) with the app router.
 - The code is mainly written in [TypeScript](https://www.typescriptlang.org/).
-- For styling, the default [TailwindCSS](https://tailwindcss.com/) configuration is used.
+- For styling, the default [PandaCSS](https://panda-css.com/) configuration is used.
 - [Husky](https://typicode.github.io/husky/) is being used to run scripts on commit
 - [ESLint](https://eslint.org/) is used to improve code quality
 - [Prettier](https://prettier.io/) is used to ensure standardized formatting.  
