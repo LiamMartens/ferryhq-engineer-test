@@ -180,3 +180,6 @@ dist
 ## Panda
 styled-system
 styled-system-studio
+
+# logfiles
+*.log

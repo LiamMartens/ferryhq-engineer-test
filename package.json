@@ -12,7 +12,8 @@
     "lint": "next lint",
     "prepare": "run-p prepare:*",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "build-storybook": "storybook build",
+    "chromatic": "node -r dotenv/config ./node_modules/.bin/chromatic dotenv_config_path=.env.local"
   },
   "dependencies": {
     "jotai": "^2.6.1",
@@ -37,7 +38,9 @@
     "@typescript-eslint/eslint-plugin": "^6.18.1",
     "@typescript-eslint/parser": "^6.18.1",
     "autoprefixer": "^10.0.1",
+    "chromatic": "^10.2.2",
     "css-loader": "^6.9.0",
+    "dotenv": "^16.3.1",
     "eslint": "^8.56.0",
     "eslint-config-next": "14.0.4",
     "eslint-config-prettier": "^9.1.0",
@@ -55,5 +58,6 @@
     "typescript": "^5",
     "vite-tsconfig-paths": "^4.2.3",
     "vitest": "^1.2.0"
-  }
+  },
+  "_id": "@ferryhq-test/app@0.1.0"
 }

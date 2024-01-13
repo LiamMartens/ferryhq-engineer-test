@@ -14,8 +14,8 @@ export const Default: Story = {
     row: 0,
     column: 0,
     css: css.raw({
-      width: "100px",
-      height: "100px",
+      width: "50px",
+      height: "50px",
     }),
   },
 };
