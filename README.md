@@ -7,6 +7,8 @@
 - [ESLint](https://eslint.org/) is used to improve code quality
 - [Prettier](https://prettier.io/) is used to ensure standardized formatting.  
   *Note: while ESLint can be used for formatting - it is not it's main purpose. Prettier is faster for formatting and deals with a different use case, which is why both are being utilized.*
+- [Storybook](https://storybook.js.org/) is used in conjunction with [Chromatic](https://www.chromatic.com/) for UI testing.
+- [Vitest](https://vitest.dev/) is used for unit testing
 
 ## Installing dependencies
 After cloning the repository you will need to install the dependencies. The project is configured to use [Bun](https://bun.sh/) as it's package manager. If you don't have Bun installed yet you can install it using the link.
