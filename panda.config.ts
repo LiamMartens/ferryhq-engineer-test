@@ -5,7 +5,9 @@ export default defineConfig({
   include: ["./src/**/*.{js,jsx,ts,tsx}"],
   exclude: [],
   theme: {
-    extend: {},
+    extend: {
+      tokens: {},
+    },
   },
   outdir: "styled-system",
 });
