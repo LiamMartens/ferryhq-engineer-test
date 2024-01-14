@@ -116,11 +116,11 @@ export function Game({ showComputerShips = false }: Props) {
       );
       const overlaps = shipCoords.some((coord) =>
         playersRef.current[0].state.ships.some((ship) =>
-          doesShipOverlap(ship.coordinates, [coord])
+          doesShipOverlap(ship.coordinates, [coord], 2)
         )
       );
       if (overlaps) {
-        alert("Can't place overlapping ship");
+        alert("Can't place overlapping or colliding ship");
       } else {
         placingShipState.resolve(shipCoords);
       }

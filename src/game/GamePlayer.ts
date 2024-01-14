@@ -78,7 +78,7 @@ export class AutoGamePlayer extends GamePlayer {
         isValidShipPlacement =
           !this.state.ships.length ||
           this.state.ships.every(
-            (ship) => !doesShipOverlap(coordinates, ship.coordinates)
+            (ship) => !doesShipOverlap(coordinates, ship.coordinates, 2)
           );
         if (isValidShipPlacement) {
           this.state.ships.push({
