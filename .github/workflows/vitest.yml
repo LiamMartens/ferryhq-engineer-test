@@ -4,7 +4,7 @@ name: "Vitest"
 on: push
 
 jobs:
-  chromatic:
+  test:
     runs-on: ubuntu-latest
     steps:
       - uses: oven-sh/setup-bun@v1

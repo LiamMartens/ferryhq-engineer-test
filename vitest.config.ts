@@ -18,7 +18,7 @@ export default defineConfig({
         "**/src/types/**",
         "**/src/ui/**",
       ],
-      reporter: ["text"],
+      reporter: ["text", "json", "html"],
     },
   },
 });
