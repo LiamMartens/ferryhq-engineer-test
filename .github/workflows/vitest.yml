@@ -1,11 +1,14 @@
 
-name: "Chromatic"
+name: "Vitest"
 
 on: push
 
 jobs:
-  chromatic:
+  test:
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pull-requests: write
     steps:
       - uses: oven-sh/setup-bun@v1
         with:
