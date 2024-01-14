@@ -1,1 +1,10 @@
 @layer reset, base, tokens, recipes, utilities;
+
+html {
+  background-color: var(--colors-neutral-800);
+  height: 100%;
+}
+
+body {
+  height: 100%;
+}

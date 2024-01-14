@@ -5,17 +5,18 @@ import {
   PlayerGridSquareState,
 } from "../PlayerGridSquare";
 import { css } from "@panda/css";
-import { useId, useMemo } from "react";
+import React, { useId, useMemo } from "react";
 import { GridCoordinate } from "@/types";
+import { coordinateFromIndex } from "@/utils";
 
-type GridState = {
+export type GridState = {
   coordinates: GridCoordinate;
   state: PlayerGridSquareState;
 }[];
 
-type OnCellClick = PlayerGridSquareProps["onClick"];
-type OnCellPointerEnter = PlayerGridSquareProps["onPoinerEnter"];
-type OnCellPointerLeave = PlayerGridSquareProps["onPoinerLeave"];
+export type OnCellClick = PlayerGridSquareProps["onClick"];
+export type OnCellPointerEnter = PlayerGridSquareProps["onPoinerEnter"];
+export type OnCellPointerLeave = PlayerGridSquareProps["onPoinerLeave"];
 
 type Props = WithCss & {
   isPrivate?: boolean;
@@ -58,8 +59,7 @@ export function PlayerGrid({
       }}
     >
       {slots.map((_, index) => {
-        const row = Math.floor(index / size[0]);
-        const col = index - row * size[0];
+        const [col, row] = coordinateFromIndex(index, size);
         const squareState =
           typeof gridState === "function"
             ? gridState([col, row])
