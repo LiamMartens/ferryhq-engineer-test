@@ -27,7 +27,7 @@ type Props = {
   showComputerShips?: boolean;
 };
 
-export function Game({ showComputerShips = true }: Props) {
+export function Game({ showComputerShips = false }: Props) {
   const [placingShipState, setPlacingShipState] =
     useState<PlacingShipState | null>(null);
   const [playingRoundState, setPlayingRoundState] =
