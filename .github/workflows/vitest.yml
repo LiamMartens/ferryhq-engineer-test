@@ -6,6 +6,9 @@ on: push
 jobs:
   test:
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pull-requests: write
     steps:
       - uses: oven-sh/setup-bun@v1
         with:
